@@ -1,10 +1,12 @@
-import json
 import os
+import shutil
+import json
 
 def create_new_estimator():
     with open("Data/Keno-bi database/general.json", "r") as f:
         general_data = json.load(f)
         nacet_path = general_data['nacet']
+        templates_path = general_data['templates']
 
     while True:
         first_name = input("Enter first name (or type 'exit' to cancel): ").strip().capitalize()
@@ -34,10 +36,20 @@ def create_new_estimator():
 
             if not os.path.exists(estimator_path):
                 os.makedirs(estimator_path)
+                # Add Price File Additions.xlsx to new estimator directory
+                price_file_additions_path = os.path.join(templates_path, "Price File Additions.xlsx")
+                estimator_price_file_path = os.path.join(estimator_path, "Price File Additions.xlsx")
+                shutil.copy(price_file_additions_path, estimator_price_file_path)
+                print(f"New Estimator '{first_name} {last_name}' with ID '{estimator_id}' has been created!")
             else:
-                print(f"Directory '{estimator_path}' already exists.")
-
-            print(f"New Estimator '{first_name} {last_name}' with ID '{estimator_id}' has been created!")
+                estimator_price_file_path = os.path.join(estimator_path, "Price File Additions.xlsx")
+                if not os.path.exists(estimator_price_file_path):
+                    # Add Price File Additions.xlsx to existing estimator directory
+                    price_file_additions_path = os.path.join(templates_path, "Price File Additions.xlsx")
+                    shutil.copy(price_file_additions_path, estimator_price_file_path)
+                    print(f"Price File Additions.xlsx has been added to '{first_name} {last_name}' estimator directory.")
+                else:
+                    print(f"Directory '{estimator_path}' and 'Price File Additions.xlsx' already exist.")
             return
 
 def delete_estimator():

@@ -1,4 +1,9 @@
 {
+    "GC": {
+        "first_name": "Gary",
+        "last_name": "Cook",
+        "estimator_path": "C:\\Python Automation\\Keno-bi\\Estimators\\Gary Cook"
+    },
     "AP": {
         "first_name": "Andrei",
         "last_name": "Polin",
