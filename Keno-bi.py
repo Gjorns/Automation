@@ -1,6 +1,7 @@
 from Data.functions.menu import *
 from Data.functions.user_management import *
 from Data.functions.accounts_management import *
+from Data.functions.reports import *
 
 
 estimator_id = ""
@@ -66,9 +67,9 @@ while True:
             reports_menu(estimator_id)
             reports_choice = input("Enter your choice: ")
             if reports_choice == "1":
-                report_option_a()
+                export_accounts()
             elif reports_choice == "2":
-                report_option_b()
+                export_estimators()
             elif reports_choice == "0":
                 break
             else:

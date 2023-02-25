@@ -127,22 +127,13 @@ def create_new_price_file(estimator_id):
         return
     
 def list_all_accounts(estimator_id):
-    with open('Data/Keno-bi database/estimator.json') as f:
-        accounts = json.load(f)
-    
-    matches = []
-    for account_id, account in accounts.items():
-        if account['account_owner'] == estimator_id:
-            matches.append((account_id, account['account_name'], account['account_vertical'], account['account_type']))
-    
-    if len(matches) > 0:
-        print("Matches found for estimator with ID", estimator_id)
-        print("---------------------------------------------------")
-        print(f"{'ID':<10} {'Account Name':<20} {'Vertical':<20} {'Type':<20}")
-        print("---------------------------------------------------")
-        for match in matches:
-            print(f"{match[0]:<10} {match[1]:<20} {match[2]:<20} {match[3]:<20}")
-    else:
-        print("No matches found for estimator with ID", estimator_id)
-    
+    with open('Data/Keno-bi database/account.json', 'r') as f:
+        account_data = json.load(f)
+    for key in account_data:
+        owner_id = account_data[key]['account_owner']
+        if owner_id == estimator_id:
+            account_name = account_data[key]['account_name']
+            account_vertical = account_data[key]['account_vertical']
+            account_type = account_data[key]['account_type']
+            print(f"{key} - {account_name} {account_vertical} {account_type}")
     input("Press Enter to continue...")

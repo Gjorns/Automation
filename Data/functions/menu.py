@@ -48,8 +48,8 @@ def reports_menu(estimator_id):
     print(f"\nWelcome, {estimator_id}!")
     print("\nREPORTS MENU")
     print("------------")
-    print("1. Report Option A")
-    print("2. Report Option B")
+    print("1. Export Accounts (.xlsx)")
+    print("2. Export Estimators (.xlsx)")
     print("0. Back (to main menu)")
 
 def check_estimator_id(estimator_id):
