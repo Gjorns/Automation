@@ -1,0 +1,22 @@
+{
+    "SW": {
+        "first_name": "Simon",
+        "last_name": "Wade",
+        "estimator_path": "C:\\Python Automation\\Keno-bi\\Estimators\\Simon Wade"
+    },
+    "AP": {
+        "first_name": "Andrei",
+        "last_name": "Polin",
+        "estimator_path": "C:\\Python Automation\\Keno-bi\\Estimators\\Andrei Polin"
+    },
+    "GC": {
+        "first_name": "Gary",
+        "last_name": "Cook",
+        "estimator_path": "C:\\Python Automation\\Keno-bi\\Estimators\\Gary Cook"
+    },
+    "PK": {
+        "first_name": "Pardip",
+        "last_name": "Kandola",
+        "estimator_path": "C:\\Python Automation\\Keno-bi\\Estimators\\Pardip Kandola"
+    }
+}

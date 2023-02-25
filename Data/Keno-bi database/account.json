@@ -1,0 +1,52 @@
+{
+    "7480K37": {
+        "account_name": "Homeserve",
+        "account_vertical": "Private & Domestic",
+        "account_type": "SLP",
+        "account_mngr_firstname": "Joe",
+        "account_mngr_lastname": "Marsh",
+        "copper_file": true,
+        "account_owner": "AP",
+        "account_file_path": "C:\\Python Automation\\Keno-bi\\accounts\\Private & Domestic\\Homeserve\\7480K37 - Homeserve master.xlsx"
+    },
+    "AVANT": {
+        "account_name": "Avant Homes",
+        "account_vertical": "New Build",
+        "account_type": "MARGIN",
+        "account_mngr_firstname": "Joe",
+        "account_mngr_lastname": "Marsh",
+        "copper_file": false,
+        "account_owner": "AP",
+        "account_file_path": "C:\\Python Automation\\Keno-bi\\accounts\\New Build\\Avant Homes\\AVANT - Avant Homes master.xlsx"
+    },
+    "7130U53": {
+        "account_name": "Ph Jones",
+        "account_vertical": "Social Housing",
+        "account_type": "SLP",
+        "account_mngr_firstname": "Joe",
+        "account_mngr_lastname": "Marsh",
+        "copper_file": false,
+        "account_owner": "AP",
+        "account_file_path": "C:\\Python Automation\\Keno-bi\\accounts\\Social Housing\\Ph Jones\\7130U53 - Ph Jones master.xlsx"
+    },
+    "7777B77": {
+        "account_name": "Testive Account",
+        "account_vertical": "Social Housing",
+        "account_type": "SLP",
+        "account_mngr_firstname": "Joe",
+        "account_mngr_lastname": "Marsh",
+        "copper_file": false,
+        "account_owner": "GC",
+        "account_file_path": "C:\\Python Automation\\Keno-bi\\accounts\\Social Housing\\Testive Account\\7777B77 - Testive Account master.xlsx"
+    },
+    "8484844": {
+        "account_name": "Askdj",
+        "account_vertical": "Social Housing",
+        "account_type": "SLP",
+        "account_mngr_firstname": "Joe",
+        "account_mngr_lastname": "Marsh",
+        "copper_file": false,
+        "account_owner": "AP",
+        "account_file_path": "C:\\Python Automation\\Keno-bi\\accounts\\Social Housing\\Askdj\\8484844 - Askdj master.xlsx"
+    }
+}
