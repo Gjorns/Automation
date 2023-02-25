@@ -75,16 +75,11 @@ def delete_estimator():
 
 
 def list_all_estimators():
-    with open("Data/Keno-bi database/estimator.json", "r") as f:
+    with open('Data/Keno-bi database/estimator.json', 'r') as f:
         estimator_data = json.load(f)
-    
-    print("List of All Estimators:")
-    print("-----------------------")
-    print("ID\tName")
-    print("-----------------------")
-    
-    for estimator_id, data in estimator_data.items():
-        estimator_name = data["estimator_name"]
-        print(f"{estimator_id}\t{estimator_name}")
-    
+    for key in estimator_data:
+        firstname = estimator_data[key]['first_name']
+        lastname = estimator_data[key]['last_name']
+        print(f"{key} - {firstname} {lastname}")
     input("Press Enter to continue...")
+    os.system('cls' if os.name == 'nt' else 'clear')
