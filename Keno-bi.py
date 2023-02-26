@@ -2,9 +2,11 @@ from Data.functions.menu import *
 from Data.functions.user_management import *
 from Data.functions.accounts_management import *
 from Data.functions.reports import *
-
+from Data.functions.price_file import *
+import datetime
 
 estimator_id = ""
+current_month = datetime.datetime.now().strftime("%B")
 
 while True:
     main_menu()
@@ -21,7 +23,7 @@ while True:
             estimator_menu(estimator_id)
             estimator_choice = input("Enter your choice: ")
             if estimator_choice == "1":
-                update_additions()
+                update_additions(estimator_id, current_month)
             elif estimator_choice == "2":
                 update_price_files()
             elif estimator_choice == "3":
