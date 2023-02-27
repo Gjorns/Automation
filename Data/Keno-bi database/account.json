@@ -5,7 +5,7 @@
         "account_type": "SLP",
         "account_mngr_firstname": "Joe",
         "account_mngr_lastname": "Marsh",
-        "copper_file": true,
+        "copper_file": false,
         "account_owner": "AP",
         "account_file_path": "C:\\Python Automation\\Keno-bi\\accounts\\Private & Domestic\\Homeserve\\7480K37 - Homeserve Master.xlsx"
     }
